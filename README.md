@@ -4,6 +4,6 @@ Neste repositório você encontrará uma página de e-commerce (versão do admin
 
 
 🪧 Vitrine Dev	
-✨ Nome	Alura Geek - Challenge Alura
+✨ Nome	Alura Geek - Challenge Alura <br>
 🏷️ Tecnologias: Hml, CSS, JavaScript
 
