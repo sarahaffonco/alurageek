@@ -1,0 +1,194 @@
+/* estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+  
+:root {
+    /* Fontes */
+    font-family: 'New Super Mario Font U', sans-serif;
+    
+    /* Colors */
+    --red: #e72020;
+    --green: #008000;
+    --aqua: #3b8cb7;
+    --pink:#f477dc;
+    --yellow: #f09507;
+    --black: #000;
+}
+
+/* cabeçalho */
+.header__container{
+    font-family: 'New Super Mario Font U', sans-serif;
+    display: flex;
+    background-color: var(--red);
+    height: 2rem;
+}
+
+/* barra de pesquisa */
+.header__input{
+    margin-left: 27rem;
+    width: 30rem;
+}
+
+/* lupa de pesquisa */
+.search-input-submit {
+    position: absolute;  
+    right: 10px; 
+    top: 1.75rem; 
+    transform: translateY(-50%);  
+}
+
+/* login e carrinho */
+.area__usuario {
+    position: absolute; 
+    right: 0; 
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  .mainmenubtn1 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-child1 {
+    display: none;
+    min-width: 200px;
+    border-radius: 30px;
+}
+
+
+.dropdown1:hover .dropdown-child1 {
+    display: block;
+    position: absolute;
+}
+.btn__login{
+    background-color: var(--red);
+    border-radius: 10rem;
+}
+
+.mainmenubtn2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-child2 {
+    display: none;
+    min-width: 200px;
+    border-radius: 30px;
+}
+
+.dropdown-child2 a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.dropdown2:hover .dropdown-child2 {
+    display: block;
+    position: absolute;
+
+}
+
+/* Area produtos */
+.container-fluid2{
+    margin: 5rem 4rem;
+}
+
+.lista__produtos{
+    color: var(--green);
+    align-content: center;
+    text-align: center;
+    max-width: 60%;
+    
+}
+
+.card {
+    width: 30rem;
+    height: 14px;
+}
+
+#produto {
+    border: 3px solid var(--pink);
+    border-radius: 0.5rem;
+}
+
+.card-img-top{
+    width: 30rem;
+    height: 10rem;
+}
+.card_footer{
+    background-color: var(--pink);
+}
+
+/* /* Formulário */
+.formulario{
+    justify-self: left;
+    background-color: #000;
+}
+
+/* Auto layout */
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+
+    width: 472px;
+    height: 517px;
+
+    background: #FFFFFF;
+}
+
+/* Rodapé */
+footer {
+    font-family: 'New Super Mario Font U', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    width: 100%;
+    height:2rem;
+    padding:1rem;
+}
+
+footer p {
+color: var(--black);
+margin-bottom: 15px;
+margin-top: 0.62rem;
+font-size: 15px;
+margin-right: 10px;
+}
+
+/* Estilos para telas menores que 726px */
+@media (max-width: 726px) {
+    .header__container {
+        flex-direction: column; /* Altera a direção para empilhar verticalmente */
+        height: auto; /* Altura automática para acomodar conteúdo */
+        padding: 10px; /* Adiciona um pouco de espaço interno */
+    }
+
+    .header__input {
+        margin-left: 0; /* Remove a margem à esquerda */
+        width: 100%; /* Define a largura para ocupar toda a largura disponível */
+    }
+
+    .area__usuario {
+        position: static; /* Remove a posição absoluta */
+        margin-top: 10px; /* Adiciona um pouco de espaço entre a barra de pesquisa e a área do usuário */
+    }
+    footer p {
+      font-size: 14px; /
+    }
+  }
